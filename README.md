@@ -11,10 +11,17 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para poder usar este script de python debera tener instalado 'Python'_
+
+_Para instalar python en windows da click en '[Como instalar Python](https://markdown.es/sintaxis-markdown/)'
 
 ```
-Da un ejemplo
+$ sudo apt install python
+```
+_Para instalarlo en un sistema operativo con linux, debera ejecutar el siguiente comando en su terminal_
+
+```
+$ sudo apt install python
 ```
 
 ### Instalación 🔧

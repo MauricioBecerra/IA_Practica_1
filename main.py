@@ -8,7 +8,7 @@ def borrarPantalla():
         os.system ("cls")
 #Funion para poner en pausa el programa
 def pausa():
-    print("Presione Enter para continuar")
+    print("\nPresione Enter para continuar")
     input()
     borrarPantalla()
 
@@ -56,12 +56,28 @@ def capitulo_4():
     cap4_7_apellido1 = "Becerra"
     cap4_8_apellido2 = "Guzman"
     cap4_9_fullname = cap4_6_nombre + " " + cap4_7_apellido1 + " " + cap4_8_apellido2
-    print("Ejercicio 10: \nNombre "+ cap4_9_fullname)
-    print("Ejercicio 11:\nMensaje: "+"100 " + "80")
+    print("Ejercicio 10: \nNombre: "+ cap4_9_fullname)
+    print("Ejercicio 11:\nMensaje: ")
+    print("80"+"120")
     
-def capitulo_5():
-    print("100 " + "80")
+#Practica capitulo 5
+#Ejercicio 12 consta de convertir la oracion la primera letra de cada palabra en mayusculas "enrique barros fernández" 
 
+
+def capitulo_5():
+    cap5 = "enrique barros fernández".title()
+    print("Ejercicio 12:")
+    print("Mensaje: " + cap5)
+    cap5_1 = "Esta Es Una Frase Para Ser Formateada.".lower()
+    print("Ejercicio 13:")
+    print("Mensaje: " + cap5_1)
+    cap5_2 = "Esta Es Una Frase Para Ser Formateada.".upper()
+    print("Ejercicio 14:")
+    print("Mensaje: " + cap5_2)
+
+def capitulo_6():
+    cap6 = "-Python.\n-JavaScript.\n-Java.\n-PHP.\n-TypeScript.\n-SQL.\n-COBOL.\n-C++.\n-Ruby"
+    print("Ejercicio 15: \n" + cap6)
 
 
 
@@ -81,6 +97,8 @@ def main():
     print("Practica capitulo #5")
     capitulo_5()
     pausa()
-
+    print("Practica capitulo #6")
+    capitulo_5()
+    pausa()
 
 main()

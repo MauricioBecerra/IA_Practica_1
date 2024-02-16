@@ -10,6 +10,7 @@ def borrarPantalla():
 def pausa():
     print("Presione Enter para continuar")
     input()
+    borrarPantalla()
 
 #Practica del capitulo 2
 #Ejercicio 1consta en guardar un mensaje en una variable 
@@ -20,11 +21,11 @@ def capitulo_2():
     cap_2_num1 = 17
     cap_2_num2 = 5
     resultado = cap_2_num1 + cap_2_num2
-    print("Ejercicio 1")
+    print("Ejercicio 1:")
     print("Mensaje de la variable 'capitulo2'\n" + capitulo2) #Mostramos ejercicio 1
-    print("Ejercicio 2")
+    print("Ejercicio 2:")
     print("Variable 1 = " + str(cap_2_num1) + "\nVariable 2 = " + str(cap_2_num2))
-    print("Ejercicio 3 y 4")
+    print("Ejercicio 3 y 4:")
     print("Resultado de la suma de las dos variables: " + str(resultado)) # Mostramos ejercicio 2
 
 #Practica del capitulo 3
@@ -43,12 +44,23 @@ def capitulo_3():
 #Ejercicio 7 consta en generar una variable y concatenar 2 strings
 #Ejercicio 8 consta en generar dos variables, sumarlas e imprimirlas
 def capitulo_4():
-    cap4_1 = "Un mensaje" + "separado pero unido" #concatena 2 strings
+    cap4_1 = "Un mensaje " + "separado pero unido" #concatena 2 strings
     print("Ejercicio 7: "+ cap4_1)
-    cap4_2 = "Otro mesaje"
+    cap4_2 = "Otro mesaje "
     cap4_3 = "que esta separado pero unido"
     cap4_4 = cap4_2 + cap4_3
-    print("Ejercicio 8: "+ cap4_1)
+    print("Ejercicio 8: "+ cap4_4)
+    cap4_5 = "Viva "
+    print("Ejercicio 9: \n" + "Mensaje: " + cap4_5 + "Mariachis!!")
+    cap4_6_nombre = "Mauricio"
+    cap4_7_apellido1 = "Becerra"
+    cap4_8_apellido2 = "Guzman"
+    cap4_9_fullname = cap4_6_nombre + " " + cap4_7_apellido1 + " " + cap4_8_apellido2
+    print("Ejercicio 10: \nNombre "+ cap4_9_fullname)
+    print("Ejercicio 11:\nMensaje: "+"100 " + "80")
+    
+def capitulo_5():
+    print("100 " + "80")
 
 
 
@@ -60,11 +72,15 @@ def main():
     print("Practica capitulo #2")
     capitulo_2()
     pausa()
-    borrarPantalla()
     print("Practica capitulo #3")
     capitulo_3()
     pausa()
-    borrarPantalla()
+    print("Practica capitulo #4")
+    capitulo_4()
+    pausa()
+    print("Practica capitulo #5")
+    capitulo_5()
+    pausa()
 
 
 main()

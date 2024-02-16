@@ -13,10 +13,11 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 _Para poder usar este script de python debera tener instalado 'Python'_
 
-_Para instalar python en windows da click en '[Como instalar Python](https://markdown.es/sintaxis-markdown/)'
+_Para instalar python en windows da click en '[Como instalar Python](https://www.programacionfacil.org/cursos/python_basico/capitulo_1_instalacion_ide_python.html)'. 
+Una vez instalado Python verificaresmo en nuestro CMD que este instalado, para ello ejecuta el sigueinte comando en CMD_
 
 ```
-$ sudo apt install python
+$ Python --version
 ```
 _Para instalarlo en un sistema operativo con linux, debera ejecutar el siguiente comando en su terminal_
 

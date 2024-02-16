@@ -78,6 +78,7 @@ def capitulo_5():
 def capitulo_6():
     cap6 = "-Python.\n-JavaScript.\n-Java.\n-PHP.\n-TypeScript.\n-SQL.\n-COBOL.\n-C++.\n-Ruby"
     print("Ejercicio 15: \n" + cap6)
+    
 
 
 

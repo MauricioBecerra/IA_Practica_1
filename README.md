@@ -1,6 +1,6 @@
 # IA_Practica_1
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Practicas del 1er Parcial de la materia de 'Inteligencia Artificial'_
 
 ## Comenzando 🚀
 

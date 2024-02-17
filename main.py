@@ -2,7 +2,7 @@ import os
 
 #Funcion para borrar la pantalla detectando primero el SO donde se ejecuto el script
 def borrarPantalla(): 
-    if os.name == "posix": #La funcion .name obtiene el SO usado y lo compara con el de linux y windows
+    if os.name == "posix": #La funcion .name obtiene el SO usado y lo comparamos con el de linux y windows
         os.system ("clear")
     elif os.name == "ce" or os.name == "nt" or os.name == "dos":
         os.system ("cls")
@@ -75,10 +75,18 @@ def capitulo_5():
     print("Ejercicio 14:")
     print("Mensaje: " + cap5_2)
 
+#Practica capitulo 6
+#Ejercicio 15 consta de generar una variable string con varios nombres de lenguajes de programacion con un salto de linea y un '-' al inicio de cada lenguaje
 def capitulo_6():
     cap6 = "-Python.\n-JavaScript.\n-Java.\n-PHP.\n-TypeScript.\n-SQL.\n-COBOL.\n-C++.\n-Ruby"
     print("Ejercicio 15: \n" + cap6)
 
+#Practica capitulo 7
+#Ejercicio 16 consta de guardar una suma en una variable con 3 valores, usando 2 numeros predeterminados y se cumpla la condicion 20+23+x=87
+#Ejercicio 17 consta de guardar una resta en una variable con 3 valores, usando 2 numeros predeterminados y se cumpla la condicion x-20-23=-87
+#Ejercicio 18 consta de guardar una multiplicacion en una variable con 3 valores, usando 2 numeros predeterminados y se cumpla la condicion 20*23*x=870
+#Ejercicio 19 consta de guardar una division en una variable con 3 valores, usando 2 numeros predeterminados y se cumpla la condicion 10 <= 5000/230/x < 11
+#Ejercicio 20 consta de solucionar una operacion de 3 valores, usando 3 operadores sin repetir, para que el resultado sea 0
 def capitulo_7():
     cap7_suma = 20 + 23 + 45
     cap7_resta = -20 - 23 - 45
@@ -91,6 +99,35 @@ def capitulo_7():
     print("Ejercicio 19: \nDivision: '5000 / 230 / 2' = ", cap7_div,)
     print("Ejercicio 20: \nOperacion con resultado 0: '10 / 5 + 15 - 17' = ",cap7_operacion)
 
+#Practica capitulo 8
+#Ejercicio 21 consta de utilizar solo el número 2 (cuantas veces necesites) y sin utilizar exponentes, para obtener el resultado 1024
+def capitulo_8():
+    cap8_exponencial = 2*2*2*2*2*2*2*2*2*2
+    print("Ejercicio 21: \nOperacion: '2*2*2*2*2*2*2*2*2*2' = ",cap8_exponencial)
+
+#Practica capitulo 9
+#Ejercicio 22 consta de redondear con 5 decimales el numero '17.567383292929200234' usando la funcion round()
+def capitulo_9():
+    cap9_redondear = 17.567383292929200234
+    print(f"Ejercicio 22: \nRedondear {cap9_redondear} con 5 decimales, resultado: {round(cap9_redondear,5)} ")
+    
+#Practica capitulo 10
+#Ejercicio 23 consta de conocer que color esta en la posicion 3 de la lista colores = ["rojo", "azul", "verde", "amarillo", "marrón", "lila", "negro", "rosa"]
+#Ejercicio 24 consta de conocer enn qué posición se encuentra el color 'rojo' y el 'rosa' en la lista del anterior comentario
+#Ejercicio 25 consta de Crea una lista que contenga los siguientes valores en las posiciones indicadas.'uno' en la posición 4.'dos' en la posición 1.'tres' en la posición 0.'cuatro' en la posición 3.'cinco' en la posición 2.
+def capitulo_10():
+    colores = ["rojo", "azul", "verde", "amarillo", "marrón", "lila", "negro", "rosa"]
+    cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']
+    print(f"Ejercicio 23: \nDe la siguiente lista 'colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa']', 
+          \n¿Que color esta en la posision3?:\nRespuesta: {colores[3]} ")
+    print(f"Ejercicio 24: \n¿En qué posición se encuentra el color 'rojo'? ¿y el 'rosa'?\nRespuesta: Rojo en la posicion 0 y rosa en la posision 7")
+    print(f"Ejercicio 25: \nCrea una lista que contenga los siguientes valores en las posiciones indicadas.
+            \n'uno' en la posición 4.
+            \n'dos' en la posición 1.
+            \n'tres' en la posición 0.
+            \n'cuatro' en la posición 3.
+            \n'cinco' en la posición 2.
+            \nResultado: 'cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']'")
 
 def main():
     print("Practica capitulo #2\n")
@@ -111,5 +148,14 @@ def main():
     print("Practica capitulo #7\n")
     capitulo_7()
     pausa()
-
+    print("Practica capitulo #8\n")
+    capitulo_8()
+    pausa()
+    print("Practica capitulo #9\n")
+    capitulo_9()
+    pausa()
+    print("Practica capitulo #10\n")
+    capitulo_10()
+    pausa()
+    
 main()

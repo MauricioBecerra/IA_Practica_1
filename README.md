@@ -19,17 +19,17 @@ Una vez instalado Python verificaresmo en nuestro CMD que este instalado, para e
 ```
 $ Python --version
 ```
-
-_Para instalarlo en un sistema operativo con linux, debera ejecutar el siguiente comando en su terminal_
-
-```
-$ sudo apt install python
-```
 _Si tenemos correctamente instalado Python, nos aparecera algo como lo siguiente._
 ```
 C:\User\Usuario>Python --version
 Python 3.12.1
 ```
+_Para instalarlo en un sistema operativo con linux, debera ejecutar el siguiente comando en su terminal_
+
+```
+$ sudo apt install python
+```
+
 ### Instalación 🔧
 
 _Puedes descargar el script usando el siguiente comando_

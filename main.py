@@ -57,49 +57,59 @@ def capitulo_4():
     cap4_8_apellido2 = "Guzman"
     cap4_9_fullname = cap4_6_nombre + " " + cap4_7_apellido1 + " " + cap4_8_apellido2
     print("Ejercicio 10: \nNombre: "+ cap4_9_fullname)
-    print("Ejercicio 11:\nMensaje: ")
-    print("80"+"120")
+    print("Ejercicio 11:\n")
+    print("Mensaje: "+"80"+"120")
     
 #Practica capitulo 5
 #Ejercicio 12 consta de convertir la oracion la primera letra de cada palabra en mayusculas "enrique barros fernández" 
-
-
+#Ejercicio 13 consta de convertir la oracion la primera letra de cada palabra en minusculas "Esta Es Una Frase Para Ser Formateada."
+#Ejercicio 14 consta de convertir la oracion en mayusculas.
 def capitulo_5():
-    cap5 = "enrique barros fernández".title()
+    cap5 = "enrique barros fernández".title() #.title() convierte las letras iniciales en mayusculas
     print("Ejercicio 12:")
     print("Mensaje: " + cap5)
-    cap5_1 = "Esta Es Una Frase Para Ser Formateada.".lower()
+    cap5_1 = "Esta Es Una Frase Para Ser Formateada.".lower()#.lower() convierte las letras iniciales en minusculas
     print("Ejercicio 13:")
     print("Mensaje: " + cap5_1)
-    cap5_2 = "Esta Es Una Frase Para Ser Formateada.".upper()
+    cap5_2 = "Esta Es Una Frase Para Ser Formateada.".upper()#.upper() convierte las letras en mayusculas
     print("Ejercicio 14:")
     print("Mensaje: " + cap5_2)
 
 def capitulo_6():
     cap6 = "-Python.\n-JavaScript.\n-Java.\n-PHP.\n-TypeScript.\n-SQL.\n-COBOL.\n-C++.\n-Ruby"
     print("Ejercicio 15: \n" + cap6)
-    
 
-
-
-
+def capitulo_7():
+    cap7_suma = 20 + 23 + 45
+    cap7_resta = -20 - 23 - 45
+    cap7_mult = 20 * 23 * ((870)/(20*23))
+    cap7_div = 5000 / 230 / 2
+    cap7_operacion = 10 / 5 + 15 - 17
+    print("Ejercicio 16: \nSuma: '20 + 23 + 45' = ", cap7_suma,)
+    print("Ejercicio 17: \nResta: '-20 - 23 - 45' = ", cap7_resta,)
+    print("Ejercicio 18: \nMultiplicacion: '20 * 23 * ((870)/(20*23))' = ", cap7_mult,)
+    print("Ejercicio 19: \nDivision: '5000 / 230 / 2' = ", cap7_div,)
+    print("Ejercicio 20: \nOperacion con resultado 0: '10 / 5 + 15 - 17' = ",cap7_operacion)
 
 
 def main():
-    print("Practica capitulo #2")
+    print("Practica capitulo #2\n")
     capitulo_2()
     pausa()
-    print("Practica capitulo #3")
+    print("Practica capitulo #3\n")
     capitulo_3()
     pausa()
-    print("Practica capitulo #4")
+    print("Practica capitulo #4\n")
     capitulo_4()
     pausa()
-    print("Practica capitulo #5")
+    print("Practica capitulo #5\n")
     capitulo_5()
     pausa()
-    print("Practica capitulo #6")
-    capitulo_5()
+    print("Practica capitulo #6\n")
+    capitulo_6()
+    pausa()
+    print("Practica capitulo #7\n")
+    capitulo_7()
     pausa()
 
 main()

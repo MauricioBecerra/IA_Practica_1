@@ -129,6 +129,7 @@ def capitulo_10():
             \n"cinco" en la posición 2.
             \nResultado: "cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']" """)
     
+#Practica capitulo 11
 def capitulo_11():
     cap11_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']#Se crea arreglo de una lista de colores
     print("Ejercicio 26: \nUtiliza las posiciones negativas para acceder e imprimir algunos de los colores de esta lista.\nLos colores a los que tienes que acceder son 'naranja', 'amarillo', 'lila', 'blanco' y 'rojo'.\n")
@@ -137,7 +138,8 @@ def capitulo_11():
     print(f"Para el color lila usamos '-5': {cap11_colores[-5]}")
     print(f"Para el color blanco usamos '-2': {cap11_colores[-2]}")
     print(f"Para el color rojo usamos '-10': {cap11_colores[-10]}")
-    
+
+#Practica capitulo 12
 def capitulo_12():
     cap12_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']#Se crea lista de colores
     cap12_1 = ""
@@ -146,10 +148,22 @@ def capitulo_12():
     del cap12_colores[4]#Elimina el dato alojado en la posision indicada
     del cap12_colores[-3]#Elimina el dato alojado en la posision indicada
     print("Ejercicio 27: \nElimina los colores 'azul', 'marrón', 'negro' y 'rosa' de la lista:\ncap12_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
-    print("Resultado de la cadena:")
+    print("Resultado del arreglo:")
     for x in cap12_colores:#Ciclo for para imprimir el contenido del arreglo
         cap12_1 += x + ","
     print("[" + cap12_1+ "]")
+
+#Practica capitulo 13
+def capitulo_13():
+    cap13_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
+    cap13_colores.remove('amarillo')#usa la funcion remove para eliminar un elemento especifico del arreglo
+    cap13_colores.remove('rojo')#usa la funcion remove para eliminar un elemento especifico
+    cap13_1 = ''
+    print("Ejercicio 28: \nElimina los elementos 'amarillo' y 'rojo' de la siguiente lista\ncap13_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
+    print("Resultado del arreglo: ")
+    for x in cap13_colores:#Ciclo for para imprimir el contenido del arreglo
+        cap13_1 += x + "," #Guarda el valor de x mas el valor de cap13_1
+    print("[" + cap13_1+ "]")
     
 def main():
     print("Practica capitulo #2\n")
@@ -184,6 +198,9 @@ def main():
     pausa()
     print("Practica capitulo #12\n")
     capitulo_12()
+    pausa()
+    print("Practica capitulo #13\n")
+    capitulo_13()
     pausa()
     
 main()

@@ -116,19 +116,31 @@ def capitulo_9():
 #Ejercicio 24 consta de conocer enn qué posición se encuentra el color 'rojo' y el 'rosa' en la lista del anterior comentario
 #Ejercicio 25 consta de Crea una lista que contenga los siguientes valores en las posiciones indicadas.'uno' en la posición 4.'dos' en la posición 1.'tres' en la posición 0.'cuatro' en la posición 3.'cinco' en la posición 2.
 def capitulo_10():
-    colores = ["rojo", "azul", "verde", "amarillo", "marrón", "lila", "negro", "rosa"]
-    cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']
-    print(f"Ejercicio 23: \nDe la siguiente lista 'colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa']', 
-          \n¿Que color esta en la posision3?:\nRespuesta: {colores[3]} ")
+    colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa'] #se creo un arreglo
+    cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno'] #se creo un arreglo
+    print(f"""Ejercicio 23: \nDe la siguiente lista "colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa']", 
+        \n¿Que color esta en la posision3?:\nRespuesta: {colores[3]} """)    
     print(f"Ejercicio 24: \n¿En qué posición se encuentra el color 'rojo'? ¿y el 'rosa'?\nRespuesta: Rojo en la posicion 0 y rosa en la posision 7")
-    print(f"Ejercicio 25: \nCrea una lista que contenga los siguientes valores en las posiciones indicadas.
-            \n'uno' en la posición 4.
-            \n'dos' en la posición 1.
-            \n'tres' en la posición 0.
-            \n'cuatro' en la posición 3.
-            \n'cinco' en la posición 2.
-            \nResultado: 'cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']'")
-
+    print("""Ejercicio 25: \nCrea una lista que contenga los siguientes valores en las posiciones indicadas.
+            \n"uno" en la posición 4.
+            \n"dos" en la posición 1.
+            \n"tres" en la posición 0.
+            \n"cuatro" en la posición 3.
+            \n"cinco" en la posición 2.
+            \nResultado: "cap9_newlist = ['tres', 'dos', 'cinco', 'cuatro', 'uno']" """)
+    
+def capitulo_11():
+    cap11_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']#Se crea arreglo de una lista de colores
+    print("Utiliza las posiciones negativas para acceder e imprimir algunos de los colores de esta lista.\nLos colores a los que tienes que acceder son 'naranja', 'amarillo', 'lila', 'blanco' y 'rojo'.\n")
+    print(f"Para el color naranja usamos '-1': {cap11_colores[-1]}")
+    print(f"Para el color amarillo usamos '-7': {cap11_colores[-7]}")
+    print(f"Para el color lila usamos '-5': {cap11_colores[-5]}")
+    print(f"Para el color blanco usamos '-2': {cap11_colores[-2]}")
+    print(f"Para el color rojo usamos '-10': {cap11_colores[-10]}")
+    
+def capitulo_12():
+    print("")
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -156,6 +168,9 @@ def main():
     pausa()
     print("Practica capitulo #10\n")
     capitulo_10()
+    pausa()
+    print("Practica capitulo #11\n")
+    capitulo_11()
     pausa()
     
 main()

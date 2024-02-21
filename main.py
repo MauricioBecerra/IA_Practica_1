@@ -131,7 +131,7 @@ def capitulo_10():
     
 def capitulo_11():
     cap11_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']#Se crea arreglo de una lista de colores
-    print("Utiliza las posiciones negativas para acceder e imprimir algunos de los colores de esta lista.\nLos colores a los que tienes que acceder son 'naranja', 'amarillo', 'lila', 'blanco' y 'rojo'.\n")
+    print("Ejercicio 26: \nUtiliza las posiciones negativas para acceder e imprimir algunos de los colores de esta lista.\nLos colores a los que tienes que acceder son 'naranja', 'amarillo', 'lila', 'blanco' y 'rojo'.\n")
     print(f"Para el color naranja usamos '-1': {cap11_colores[-1]}")
     print(f"Para el color amarillo usamos '-7': {cap11_colores[-7]}")
     print(f"Para el color lila usamos '-5': {cap11_colores[-5]}")
@@ -139,7 +139,17 @@ def capitulo_11():
     print(f"Para el color rojo usamos '-10': {cap11_colores[-10]}")
     
 def capitulo_12():
-    print("")
+    cap12_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']#Se crea lista de colores
+    cap12_1 = ""
+    del cap12_colores[1]#Elimina el dato alojado en la posision indicada
+    del cap12_colores[3]#Elimina el dato alojado en la posision indicada
+    del cap12_colores[4]#Elimina el dato alojado en la posision indicada
+    del cap12_colores[-3]#Elimina el dato alojado en la posision indicada
+    print("Ejercicio 27: \nElimina los colores 'azul', 'marrón', 'negro' y 'rosa' de la lista:\ncap12_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
+    print("Resultado de la cadena:")
+    for x in cap12_colores:#Ciclo for para imprimir el contenido del arreglo
+        cap12_1 += x + ","
+    print("[" + cap12_1+ "]")
     
 def main():
     print("Practica capitulo #2\n")
@@ -171,6 +181,9 @@ def main():
     pausa()
     print("Practica capitulo #11\n")
     capitulo_11()
+    pausa()
+    print("Practica capitulo #12\n")
+    capitulo_12()
     pausa()
     
 main()

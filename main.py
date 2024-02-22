@@ -204,7 +204,8 @@ def capitulo_20():
     cap20_tuple = tuple(cap20_colores)#Transformamos la lista a tuple
     print("Ejercicio 35: \nUtiliza tuple para convertir una lista e imprime el tipo de lista que es. \nLa lista es: cap20_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
     print("Resultado: " + str(type(cap20_tuple)))
-    
+
+#Practica capitulo 21
 def capitulo_21():
     cap21_num1 = 15
     cap21_num2 = 20
@@ -222,7 +223,18 @@ def capitulo_21():
     else: #si no se cumple el condicional donde cap21_num1 debe ser igual a cap21_num2 ejecuta esta accion
         print('Resultado: No se ejecuta el if con el siguiente orden "cap21_num1 = 60" y "cap21_num2 = 60".')    
     
-    
+#Practica capitulo 22
+def capitulo_22():
+    print("Ejercicio 39:")
+    print("Arregla el siguiente tramo de codigo:\n----------- \ncolor = rojo\n\nelse color == rojo\nPrint \"El color es rojo.\"\nif color != rojo\nPrint \"El color no es rojo.\"\n-----------\n")
+    color = "rojo"
+    if color == "rojo":
+        print("Resultado: El color es rojo.")
+        print("El codigo quedo asi:\n")
+        print("if color == \"rojo\":\n\tprint(\"El color es rojo.\")\nelse:\n\tprint(\"El color no es rojo.\")\n-----------")
+    else:
+        print("El color no es rojo.")
+
     
 def main():
     print("Practica capitulo #2\n")
@@ -281,6 +293,9 @@ def main():
     pausa()
     print("Practica capitulo #21\n")
     capitulo_21()
+    pausa()
+    print("Practica capitulo #22\n")
+    capitulo_22()
     pausa()
     
 main()

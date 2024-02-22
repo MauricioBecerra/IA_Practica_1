@@ -208,19 +208,19 @@ def capitulo_20():
 def capitulo_21():
     cap21_num1 = 15
     cap21_num2 = 20
-    print("Ejercicio 36: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 15' y 'cap21_num2 = 20', el condicional es if cap21_num1 == cap21_num2:")
+    print("Ejercicio 36: \nModifica el operador del condicional para que sea True las variables valen:\n'cap21_num1 = 15' y 'cap21_num2 = 20', el condicional es if cap21_num1 == cap21_num2:")
     if cap21_num1 != cap21_num2: #iniciamos condicional donde cap21_num1 debe ser diferente a cap21_num2
         print('Resultado: Se ejecuta el if con el siguiente orden "cap21_num1 != cap21_num2".')
         
-    print("\nEjercicio 37: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 < cap21_num2:")
+    print("\nEjercicio 37: \nModifica el operador del condicional para que sea True las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 < cap21_num2:")
     if cap21_num1 > cap21_num2: #iniciamos condicional donde cap21_num1 debe ser mayor a cap21_num2
         print('Resultado: Se ejecuta el if con el siguiente orden "cap21_num1 > cap21_num2".')
     
-    print("\nEjercicio 38: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 != cap21_num2:")
+    print("\nEjercicio 38: \nModifica el condicional para que sea False sin modificar el operador las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 != cap21_num2:")
     if cap21_num1 == cap21_num2:#iniciamos condicional donde cap21_num1 debe ser igual a cap21_num2
-        print('hola')
+        print('Hola')
     else: #si no se cumple el condicional donde cap21_num1 debe ser igual a cap21_num2 ejecuta esta accion
-        print('Resultado: No se ejecuta el if con el siguiente orden "cap21_num1 == cap21_num2".')    
+        print('Resultado: No se ejecuta el if con el siguiente orden "cap21_num1 = 60" y "cap21_num2 = 60".')    
     
     
     

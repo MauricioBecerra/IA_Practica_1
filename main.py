@@ -230,7 +230,7 @@ def capitulo_22():
     color = "rojo"
     if color == "rojo":
         print("Resultado: El color es rojo.")
-        print("El codigo quedo asi:\n")
+        print("El codigo quedo asi: \n")
         print("if color == \"rojo\":\n\tprint(\"El color es rojo.\")\nelse:\n\tprint(\"El color no es rojo.\")\n-----------")
     else:
         print("El color no es rojo.")

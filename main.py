@@ -147,7 +147,7 @@ def capitulo_12():
     del cap12_colores[4]#Elimina el dato alojado en la posision indicada
     del cap12_colores[-3]#Elimina el dato alojado en la posision indicada
     print("Ejercicio 27: \nElimina los colores 'azul', 'marrón', 'negro' y 'rosa' de la lista:\ncap12_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
-    print("Resultado del arreglo: " + "[" + ",".join(cap12_colores) + "]")
+    print("Resultado del arreglo: " + "[" + ",".join(cap12_colores) + "]") #Se unen los datos del arreglo o lista con join y separados con una ,
 
 #Practica capitulo 13
 def capitulo_13():
@@ -155,14 +155,14 @@ def capitulo_13():
     cap13_colores.remove('amarillo')#usa la funcion remove para eliminar un elemento especifico del arreglo
     cap13_colores.remove('rojo')#usa la funcion remove para eliminar un elemento especifico
     print("Ejercicio 28: \nElimina los elementos 'amarillo' y 'rojo' de la siguiente lista\ncap13_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
-    print("Resultado del arreglo: "+"[" + ",".join(cap13_colores) + "]")
+    print("Resultado del arreglo: "+"[" + ",".join(cap13_colores) + "]") #Se unen los datos del arreglo o lista con join y separados con una ,
 
 #Practica capitulo 14 
 def capitulo_14():
     cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
     cap14_colorsgd = [cap14_colores.pop(1), cap14_colores.pop(7)]
     print("Ejercico 29: \n-Elimina los elementos 'azul' y 'blanco' de la lista \n- cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']\n-Utiliza el metodo .pop()")
-    print("Los datos almacenados son: " + " y ".join(cap14_colorsgd))
+    print("Los datos almacenados son: " + " y ".join(cap14_colorsgd)) #Se unen los datos del arreglo o lista con join y separados con una ,
 
 #Practica capitulo 15
 def capitulo_15():
@@ -170,7 +170,7 @@ def capitulo_15():
     cap15_colores.append('fuxia')
     cap15_colores.append('celeste')
     print("Ejercicio 30: \n-Agrega a la lista: \n- cap15_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-Los colores 'fuxia' y 'celeste'")
-    print("Lista con los nuevos colores: [" + ",".join(cap15_colores) + "]" )
+    print("Lista con los nuevos colores: [" + ",".join(cap15_colores) + "]" ) #Se unen los datos del arreglo o lista con join y separados con una ,
 
 #Practica capitulo 16  
 def capitulo_16():
@@ -178,14 +178,14 @@ def capitulo_16():
     cap16_colores.insert(-4,'magenta')
     cap16_colores.insert(-1,'turquesa')
     print("Ejercicio 31: \n-Agrega a la lista: \n- cap16_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-Los colores 'magenta' y 'turquesa' usando la funcion .insert() con posision negativa.")
-    print("Lista con los nuevos colores: [" + ",".join(cap16_colores) + "]" )
+    print("Lista con los nuevos colores: [" + ",".join(cap16_colores) + "]" ) #Se unen los datos del arreglo o lista con join y separados con una ,
     
 #practica capitulo 17
 def capitulo_17():
     cap17_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón','lila', 'negro', 'rosa', 'blanco', 'naranja']
     cap17_colores.sort(reverse=True)
     print("Ejercicio 32: \n-Ordenar la lista: \n- cap17_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón','lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-En orden alfabetico.")
-    print("Lista con los nuevos colores: [" + ",".join(cap17_colores) + "]" )
+    print("Lista con los nuevos colores: [" + ",".join(cap17_colores) + "]" ) #Se unen los datos del arreglo o lista con join y separados con una ,
     
 #Practica capitulo 19
 def capitulo_19():
@@ -193,10 +193,19 @@ def capitulo_19():
     print("Ejercicio 33: \n-Imprimir la segunda posicion de esta tupla: \n- cap18_colores = ('rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja')")
     print("El dato guardado en la segunda posicion es: " + cap19_colores[1])
     cap19_numeros = (10, 1, 5, 11)
-    cap19_operacion = cap19_numeros[0] + cap19_numeros[2] + cap19_numeros[3] - cap19_numeros[1]
+    cap19_operacion = cap19_numeros[0] + cap19_numeros[2] + cap19_numeros[3] - cap19_numeros[1] #Se hace una suma
     print("\nEjercicio 34: \n-Utiliza simbolos de suma y resta para obtener el resultado 25, \nla matriz a usar es: cap19_numeros = (10, 1, 5, 11)")
     print("El orden es: cap19_operacion = cap19_numeros[0] + cap19_numeros[2] + cap19_numeros[3] - cap19_numeros[1]")
     print(f"El resultado es: {cap19_operacion}")
+
+#Practica capitulo 20
+def capitulo_20():
+    cap20_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
+    cap20_tuple = tuple(cap20_colores)#Transformamos la lista a tuple
+    print("Ejercicio 35: \nUtiliza tuple para convertir una lista e imprime el tipo de lista que es. \nLa lista es: cap20_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
+    print("Resultado: " + str(type(cap20_tuple)))
+    
+    
     
 def main():
     print("Practica capitulo #2\n")
@@ -249,6 +258,9 @@ def main():
     pausa()
     print("Practica capitulo #19\n")
     capitulo_19()
+    pausa()
+    print("Practica capitulo #20\n")
+    capitulo_20()
     pausa()
     
 main()

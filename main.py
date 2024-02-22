@@ -156,23 +156,29 @@ def capitulo_13():
     cap13_colores.remove('rojo')#usa la funcion remove para eliminar un elemento especifico
     print("Ejercicio 28: \nElimina los elementos 'amarillo' y 'rojo' de la siguiente lista\ncap13_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
     print("Resultado del arreglo: "+"[" + ",".join(cap13_colores) + "]")
-    
+
+#Practica capitulo 14 
 def capitulo_14():
     cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
     cap14_colorsgd = [cap14_colores.pop(1), cap14_colores.pop(7)]
     print("Ejercico 29: \n-Elimina los elementos 'azul' y 'blanco' de la lista \n- cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']\n-Utiliza el metodo .pop()")
     print("Los datos almacenados son: " + " y ".join(cap14_colorsgd))
-    
+
+#Practica capitulo 15
 def capitulo_15():
     cap15_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
     cap15_colores.append('fuxia')
     cap15_colores.append('celeste')
     print("Ejercicio 30: \n-Agrega a la lista: \n- cap15_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-Los colores 'fuxia' y 'celeste'")
     print("Lista con los nuevos colores: [" + ",".join(cap15_colores) + "]" )
-    
+
+#Practica capitulo 16  
 def capitulo_16():
-    cap16_1 = ''
-    
+    cap16_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
+    cap16_colores.insert(-4,'magenta')
+    cap16_colores.insert(-1,'turquesa')
+    print("Ejercicio 31: \n-Agrega a la lista: \n- cap16_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-Los colores 'magenta' y 'turquesa' usando la funcion .insert() con posision negativa.")
+    print("Lista con los nuevos colores: [" + ",".join(cap16_colores) + "]" )
     
 def main():
     print("Practica capitulo #2\n")
@@ -216,6 +222,9 @@ def main():
     pausa()
     print("Practica capitulo #15\n")
     capitulo_15()
+    pausa()
+    print("Practica capitulo #16\n")
+    capitulo_16()
     pausa()
     
 main()

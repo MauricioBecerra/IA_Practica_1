@@ -205,6 +205,23 @@ def capitulo_20():
     print("Ejercicio 35: \nUtiliza tuple para convertir una lista e imprime el tipo de lista que es. \nLa lista es: cap20_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
     print("Resultado: " + str(type(cap20_tuple)))
     
+def capitulo_21():
+    cap21_num1 = 15
+    cap21_num2 = 20
+    print("Ejercicio 36: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 15' y 'cap21_num2 = 20', el condicional es if cap21_num1 == cap21_num2:")
+    if cap21_num1 != cap21_num2: #iniciamos condicional donde cap21_num1 debe ser diferente a cap21_num2
+        print('Resultado: Se ejecuta el if con el siguiente orden "cap21_num1 != cap21_num2".')
+        
+    print("\nEjercicio 37: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 < cap21_num2:")
+    if cap21_num1 > cap21_num2: #iniciamos condicional donde cap21_num1 debe ser mayor a cap21_num2
+        print('Resultado: Se ejecuta el if con el siguiente orden "cap21_num1 > cap21_num2".')
+    
+    print("\nEjercicio 38: \nModifica el condicional para que sea True las variables valen:\n'cap21_num1 = 1450' y 'cap21_num2 = 60', el condicional es if cap21_num1 != cap21_num2:")
+    if cap21_num1 == cap21_num2:#iniciamos condicional donde cap21_num1 debe ser igual a cap21_num2
+        print('hola')
+    else: #si no se cumple el condicional donde cap21_num1 debe ser igual a cap21_num2 ejecuta esta accion
+        print('Resultado: No se ejecuta el if con el siguiente orden "cap21_num1 == cap21_num2".')    
+    
     
     
 def main():
@@ -261,6 +278,9 @@ def main():
     pausa()
     print("Practica capitulo #20\n")
     capitulo_20()
+    pausa()
+    print("Practica capitulo #21\n")
+    capitulo_21()
     pausa()
     
 main()

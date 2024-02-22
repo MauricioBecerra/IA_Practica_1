@@ -189,7 +189,14 @@ def capitulo_17():
     
 #Practica capitulo 19
 def capitulo_19():
-    cap18_1 = ''
+    cap19_colores = ('rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja')
+    print("Ejercicio 33: \n-Imprimir la segunda posicion de esta tupla: \n- cap18_colores = ('rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja')")
+    print("El dato guardado en la segunda posicion es: " + cap19_colores[1])
+    cap19_numeros = (10, 1, 5, 11)
+    cap19_operacion = cap19_numeros[0] + cap19_numeros[2] + cap19_numeros[3] - cap19_numeros[1]
+    print("\nEjercicio 34: \n-Utiliza simbolos de suma y resta para obtener el resultado 25, \nla matriz a usar es: cap19_numeros = (10, 1, 5, 11)")
+    print("El orden es: cap19_operacion = cap19_numeros[0] + cap19_numeros[2] + cap19_numeros[3] - cap19_numeros[1]")
+    print(f"El resultado es: {cap19_operacion}")
     
 def main():
     print("Practica capitulo #2\n")
@@ -239,6 +246,9 @@ def main():
     pausa()
     print("Practica capitulo #17\n")
     capitulo_17()
+    pausa()
+    print("Practica capitulo #19\n")
+    capitulo_19()
     pausa()
     
 main()

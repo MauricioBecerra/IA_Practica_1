@@ -180,6 +180,17 @@ def capitulo_16():
     print("Ejercicio 31: \n-Agrega a la lista: \n- cap16_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-Los colores 'magenta' y 'turquesa' usando la funcion .insert() con posision negativa.")
     print("Lista con los nuevos colores: [" + ",".join(cap16_colores) + "]" )
     
+#practica capitulo 17
+def capitulo_17():
+    cap17_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón','lila', 'negro', 'rosa', 'blanco', 'naranja']
+    cap17_colores.sort(reverse=True)
+    print("Ejercicio 32: \n-Ordenar la lista: \n- cap17_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón','lila', 'negro', 'rosa', 'blanco', 'naranja'] \n-En orden alfabetico.")
+    print("Lista con los nuevos colores: [" + ",".join(cap17_colores) + "]" )
+    
+#Practica capitulo 19
+def capitulo_19():
+    cap18_1 = ''
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -225,6 +236,9 @@ def main():
     pausa()
     print("Practica capitulo #16\n")
     capitulo_16()
+    pausa()
+    print("Practica capitulo #17\n")
+    capitulo_17()
     pausa()
     
 main()

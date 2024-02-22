@@ -157,7 +157,11 @@ def capitulo_13():
     print("Ejercicio 28: \nElimina los elementos 'amarillo' y 'rojo' de la siguiente lista\ncap13_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']")
     print("Resultado del arreglo: "+"[" + ",".join(cap13_colores) + "]")
     
-
+def capitulo_14():
+    cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']
+    cap14_colorsgd = [cap14_colores.pop(1), cap14_colores.pop(7)]
+    print("Ejercico 29: \n-Elimina los elementos 'azul' y 'blanco' de la lista \n- cap14_colores = ['rojo', 'azul', 'verde', 'amarillo', 'marrón', 'lila', 'negro', 'rosa', 'blanco', 'naranja']\n-Utiliza el metodo .pop()")
+    print("Los datos almacenados son: " + " y ".join(cap14_colorsgd))
    
 def main():
     print("Practica capitulo #2\n")
@@ -195,6 +199,9 @@ def main():
     pausa()
     print("Practica capitulo #13\n")
     capitulo_13()
+    pausa()
+    print("Practica capitulo #14\n")
+    capitulo_14()
     pausa()
     
 main()

@@ -352,6 +352,23 @@ def capitulo_32():
     for z in cap32_teclado_2: #Generamos un for que se repetira la longitud del diccionario
         print(z + ' = ' + cap32_teclado_2[z]) #Imprime el valor de z que sera la key y luego cap32_teclado_2[z] sera el valor en esa key
     
+def capitulo_33():
+    cap33_1 = {#Creamos un diccionario  con datos de categoria, modelo y precio, en este caso de un teclado
+        'Categoría': 'Teclados', #Parte del diccionario que contiene la categoria
+        'Modelo': 'HyperX Alloy FPS Pro', #Parte del diccionario que contiene el modelo
+        'Precio': '89,99'#Parte del diccionario que contiene el precio
+    }
+    cap33_2 = {#Creamos un diccionario  con datos de categoria, modelo y precio, en este caso de un teclado
+        'Categoría': 'Teclados',#Parte del diccionario que contiene la categoria
+        'Modelo': 'Corsair K55 RGB',#Parte del diccionario que contiene el modelo
+        'Precio': '59,99'#Parte del diccionario que contiene el precio
+    }
+    print("Ejercicio 50:")
+    del cap33_1 #Se borra el diccionario por completo
+    del cap33_2['Categoría']#Se elimina la key junto con su valor del diccionario por completo
+    del cap33_2['Precio']#Se elimina la key junto con su valor del diccionario por completo
+    print(cap33_2['Modelo'])#Se imprime el diccionario por completo
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -442,6 +459,9 @@ def main():
     pausa()
     print("Practica capitulo #32\n")
     capitulo_32()
+    pausa()
+    print("Practica capitulo #33\n")
+    capitulo_33()
     pausa()
 main()
 

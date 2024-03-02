@@ -237,13 +237,21 @@ def capitulo_22():
         
 def capitulo_23():
     print("Ejercicio 40:")
-    estatura = input('Ingresa tu estatura en cm: ')
-    if (estatura > 160 ):#Condicional
-        print('Eres una persona alta.')
-    elif ( estatura <= 160 and estatura > 80): #Condicional si no es puede ser
-        print('Eres una persona bajita.')
-    elif (estatura < 80):#Condicional si no es puede ser
-        print('No puedes ser tan bajito.')
+    band = False #Se crea una bandera
+    while band != True:#Se repite el ciclo hasta la bandera sea True
+        estatura = input('Ingresa tu estatura en cm: ')
+        if estatura.isdigit(): #Comprueba que el valor ingresado sea numerico
+            band=True
+            estatura=int(estatura)
+            if (estatura > 160 ):#Condicional
+                print('Eres una persona alta.')
+            elif ( estatura <= 160 and estatura > 80): #Condicional si no es puede ser
+                print('Eres una persona bajita.')
+            elif (estatura < 80):#Condicional si no es puede ser
+                print('No puedes ser tan bajito.')
+        else:
+            print('Ingresa una edad valida.')
+        
         
 def capitulo_24():
     print("Ejercicio 41:")
@@ -254,7 +262,30 @@ def capitulo_24():
     else: #En caso que la materia ingresada no este arroja el siguiente mensaje
         print('La materia ingresada no esta en la lista.')
 
-    
+def capitulo_25():
+    print("Ejercicio capitulo 25:")
+    band2 = False
+    while band2 != True: #Se repite el ciclo hasta la bandera sea True
+        cap25_edad = input('Ingresa una edad: ')
+        if cap25_edad.isdigit(): #Comprueba que el valor ingresado sea numerico
+            band2 = True
+            if cap25_edad == 18: #Se crea un condicional
+                print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
+            if cap25_edad == 19: #Se crea un condicional
+                print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
+            if cap25_edad == 20: #Se crea un condicional
+                print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
+            if cap25_edad == 21: #Se crea un condicional
+                print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
+        else:
+            print('Ingresa una edad valida.')
+
+def capitulo_26():
+    cap26_num1 = 50
+    cap26_num2 = 200
+    print("Ejercicio capitulo 26:")
+    print('El numero 1 es mayor que el numero 2') if cap26_num1 > cap26_num2 else print('El numero 1 es mayor que el numero 2') #Condicional con else en una sola linea de codigo.
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -317,10 +348,15 @@ def main():
     capitulo_22()
     pausa()
     print("Practica capitulo #23\n")
-    capitulo_22()
+    capitulo_23()
     pausa()
     print("Practica capitulo #24\n")
-    capitulo_22()
+    capitulo_24()
     pausa()
-    
+    print("Practica capitulo #25\n")
+    capitulo_25()
+    pausa()
+    print("Practica capitulo #26\n")
+    capitulo_26()
+    pausa()
 main()

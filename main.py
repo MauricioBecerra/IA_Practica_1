@@ -278,7 +278,7 @@ def capitulo_25():
                 print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
             if cap25_edad == 21: #Se crea un condicional
                 print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
-            if cap25_edad > 17 and cap25_edad < 22:
+            if cap25_edad != 18 or cap25_edad != 21 or cap25_edad != 20 or cap25_edad != 19:
                 print('La edad no esta registra en los condicionales.')
         else:
             print('Ingresa una edad valida.')
@@ -318,6 +318,13 @@ def capitulo_28():
             print('Se rompió la ejecución del bucle cuando cap28_num1 tomo el valor de: '+ str(cap28_num1))#Imprime el mensaje se rompio el bucle en el valor e imprime el valor de la variable
             break#rompe el ciclo
         print(cap28_num1)
+
+def capitulo_29():
+    print("Ejercicio 46:")
+    print("Consiste en un ciclo for para mostrar el contenido de un for:")
+    cap_29_nombres = ['Mauricio', 'Manuel', 'Diego', 'Edgar', 'Martha', 'Montse', 'Fernando'] #Lista con nombres
+    for z in cap_29_nombres: #Se crea un ciclo for de z hasta la longitud del arreglo o lista
+        print('El nombre es: ' + z)#Imprime el nombre en la lista en el valor tomado en el ciclo for hasta terminar con el arreglo
 
 def main():
     print("Practica capitulo #2\n")
@@ -397,6 +404,9 @@ def main():
     pausa()
     print("Practica capitulo #28\n")
     capitulo_28()
+    pausa()
+    print("Practica capitulo #29\n")
+    capitulo_29()
     pausa()
 main()
 

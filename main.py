@@ -269,6 +269,7 @@ def capitulo_25():
         cap25_edad = input('Ingresa una edad: ')
         if cap25_edad.isdigit(): #Comprueba que el valor ingresado sea numerico
             band2 = True
+            cap25_edad = int(cap25_edad)
             if cap25_edad == 18: #Se crea un condicional
                 print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
             if cap25_edad == 19: #Se crea un condicional
@@ -285,6 +286,24 @@ def capitulo_26():
     cap26_num2 = 200
     print("Ejercicio capitulo 26:")
     print('El numero 1 es mayor que el numero 2') if cap26_num1 > cap26_num2 else print('El numero 1 es mayor que el numero 2') #Condicional con else en una sola linea de codigo.
+
+def capitulo_27():
+    print("Ejercicio 42:")
+    cap27_x = 0
+    while cap27_x <= 15: #Se crea un ciclo while
+        print('El valor es: ' + str(cap27_x)) #Imprime de valor de la variable
+        cap27_x += 5 #Suma 5 al valor anterior de la variable
+    print("Ejercicio 43:")
+    cap27_y = 0
+    while cap27_y >= -100: #Se crea un ciclo while
+        print('El valor es: ' + str(cap27_y)) #Imprime de valor de la variable
+        cap27_y -= 20 #Resta 20 al valor anterior de la variable
+    print("Ejercicio 44:")
+    cap27_z = 10
+    while cap27_z >= 0: #Se crea un ciclo while
+        print('El valor es: ' + str(cap27_z)) #Imprime de valor de la variable
+        cap27_z -= 1 #Resta 1 al valor anterior de la variable
+    
 
 def main():
     print("Practica capitulo #2\n")
@@ -358,5 +377,8 @@ def main():
     pausa()
     print("Practica capitulo #26\n")
     capitulo_26()
+    pausa()
+    print("Practica capitulo #27\n")
+    capitulo_27()
     pausa()
 main()

@@ -332,7 +332,14 @@ def capitulo_30():
     for cap36_num1 in range(7, 700 , 100): #Ciclo for que inicia en 7 hasta 700 con incrementos de 100 en 100
         print(cap36_num1)#Imprime el valor de cap36_num1
 
-
+def capitulo_31():
+    cap31_teclado_2 = {#Creamos un diccionario  con datos de categoria, modelo y precio, en este caso de un teclado
+        'Categoría': 'Teclados', #Parte del diccionario que contiene la categoria
+        'Modelo': 'Corsair K55 RGB', #Parte del diccionario que contiene el modelo
+        'Precio': '59,99'#Parte del diccionario que contiene el precio
+    }
+    print("Ejercicio 48:")
+    print('El modelo ', cap31_teclado_2['Modelo'] + ' cuesta ' + ' $ ' +cap31_teclado_2['Precio'])#Imprime los valores del diccionario en el apartado correspondiente.
     
 def main():
     print("Practica capitulo #2\n")
@@ -418,6 +425,9 @@ def main():
     pausa()
     print("Practica capitulo #30\n")
     capitulo_30()
+    pausa()
+    print("Practica capitulo #31\n")
+    capitulo_31()
     pausa()
 main()
 

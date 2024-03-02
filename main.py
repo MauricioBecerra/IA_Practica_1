@@ -234,6 +234,25 @@ def capitulo_22():
         print("if color == \"rojo\":\n\tprint(\"El color es rojo.\")\nelse:\n\tprint(\"El color no es rojo.\")\n-----------")
     else:
         print("El color no es rojo.")
+        
+def capitulo_23():
+    print("Ejercicio 40:")
+    estatura = input('Ingresa tu estatura en cm: ')
+    if (estatura > 160 ):#Condicional
+        print('Eres una persona alta.')
+    elif ( estatura <= 160 and estatura > 80): #Condicional si no es puede ser
+        print('Eres una persona bajita.')
+    elif (estatura < 80):#Condicional si no es puede ser
+        print('No puedes ser tan bajito.')
+        
+def capitulo_24():
+    print("Ejercicio 41:")
+    cap24_materia = input('Introduce nombre de una materia: ')
+    cap24_materias = ['Matematicas', 'Español', 'Historia', 'Ciencias Naturales']
+    if cap24_materia in cap24_materias: #Condicional donde se encarga de ver si la materia ingresada esta en la lista
+        print('La materia ingresada se encuentra en la lista.')
+    else: #En caso que la materia ingresada no este arroja el siguiente mensaje
+        print('La materia ingresada no esta en la lista.')
 
     
 def main():
@@ -295,6 +314,12 @@ def main():
     capitulo_21()
     pausa()
     print("Practica capitulo #22\n")
+    capitulo_22()
+    pausa()
+    print("Practica capitulo #23\n")
+    capitulo_22()
+    pausa()
+    print("Practica capitulo #24\n")
     capitulo_22()
     pausa()
     

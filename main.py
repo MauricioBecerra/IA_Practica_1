@@ -378,6 +378,33 @@ def capitulo_34():
     cap_34suma(20, 30)#llamamos a la funcion y mandamos dos numeros como parametros
     cap_34suma(50000, 7000)#llamamos a la funcion y mandamos dos numeros como parametros
     
+def capitulo_35():
+    print("Ejercicio 52:")
+    """
+    Este codigo es proporcionado por el curso de aqui debemos reconocer cuantos argumentos existen en cada una de las lineas en la que se llama a la funcion
+    def colores(*args):
+        pass
+
+    colores('rojo', 'azul', 'verde', 'amarillo')
+    colores('lila', 'negro', 'rojo')
+    colores('rosa')
+    colores('marrón', 'naranja')
+    """
+    print('Codigo proporcionado: ')
+    print("def colores(*args):\n\tpass\ncolores('rojo', 'azul', 'verde', 'amarillo')\ncolores('lila', 'negro', 'rojo')\ncolores('rosa')\ncolores('marrón', 'naranja')")
+    print('Los argumentos por linea son: \nLinea 4: 4 argumentps \nLinea 5: 3 argumentos \nLinea 6: 1 argumento \nLinea 7: 2 argumentos')
+    print("Ejercicio 53:")
+    def cap35_colors(*args):#Creamos una funcion con parametro de args
+        print('El color ' + args[1] + ' es mi favorito. El color ' + args[0] + ' tampoco está mal.')#Imprimimos los argumentos ingresados en este caso solamente el argumento 0 y 1
+
+    cap35_colors('Azul', 'Negro')#Llamamos a la funcion mandando los dos colores como parametros
+    print("Ejercicio 54:")
+    def cap35_suma(*args):#definimos la funcion con parametros args
+        cap35_result = args[0] + args[1] + args[2] + args[3] + args[4]#sumamos todos los argumentos
+        print('El resultado de la suma de los argumentos es:', cap35_result)#imprimimos la suma
+
+    cap35_suma(14,15,30,85,94)#Llamamos a nuestra funcion
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -475,6 +502,11 @@ def main():
     print("Practica capitulo #34\n")
     capitulo_34()
     pausa()
+    print("Practica capitulo #35\n")
+    capitulo_35()
+    pausa()
+
+    
 main()
 
 #print("Ejercicio 45:")

@@ -237,7 +237,7 @@ def capitulo_22():
         
 def capitulo_23():
     print("Ejercicio 40:")
-    estatura = input('Ingresa tu estatura en cm: ')
+    estatura = int(input('Ingresa tu estatura en cm: '))
     if (estatura > 160 ):#Condicional
         print('Eres una persona alta.')
     elif ( estatura <= 160 and estatura > 80): #Condicional si no es puede ser
@@ -254,7 +254,19 @@ def capitulo_24():
     else: #En caso que la materia ingresada no este arroja el siguiente mensaje
         print('La materia ingresada no esta en la lista.')
 
-    
+def capitulo_25():
+    print("Ejercicio capitulo 25:")
+    cap25_edad = int(input('Ingresa una edad: '))
+    if cap25_edad == 18:
+        print('Ingresaste la edad equivalente a ' + cap25_edad + 'años')
+    if cap25_edad == 19:
+        print('Ingresaste la edad equivalente a ' + cap25_edad + 'años')
+    if cap25_edad == 20:
+        print('Ingresaste la edad equivalente a ' + cap25_edad + 'años')
+    if cap25_edad == 21:
+        print('Ingresaste la edad equivalente a ' + cap25_edad + 'años')
+        
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -317,10 +329,13 @@ def main():
     capitulo_22()
     pausa()
     print("Practica capitulo #23\n")
-    capitulo_22()
+    capitulo_23()
     pausa()
     print("Practica capitulo #24\n")
-    capitulo_22()
+    capitulo_24()
+    pausa()
+    print("Practica capitulo #25\n")
+    capitulo_25()
     pausa()
     
 main()

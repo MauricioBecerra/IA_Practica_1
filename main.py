@@ -326,6 +326,14 @@ def capitulo_29():
     for z in cap_29_nombres: #Se crea un ciclo for de z hasta la longitud del arreglo o lista
         print('El nombre es: ' + z)#Imprime el nombre en la lista en el valor tomado en el ciclo for hasta terminar con el arreglo
 
+def capitulo_30():
+    print("Ejercicio 47:")
+    print('Crear ciclo for que vaya desde 7 hasta 700 con saltos de 100.')
+    for cap36_num1 in range(7, 700 , 100): #Ciclo for que inicia en 7 hasta 700 con incrementos de 100 en 100
+        print(cap36_num1)#Imprime el valor de cap36_num1
+
+
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -407,6 +415,9 @@ def main():
     pausa()
     print("Practica capitulo #29\n")
     capitulo_29()
+    pausa()
+    print("Practica capitulo #30\n")
+    capitulo_30()
     pausa()
 main()
 

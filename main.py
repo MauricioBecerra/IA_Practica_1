@@ -368,6 +368,15 @@ def capitulo_33():
     del cap33_2['Categoría']#Se elimina la key junto con su valor del diccionario por completo
     del cap33_2['Precio']#Se elimina la key junto con su valor del diccionario por completo
     print(cap33_2['Modelo'])#Se imprime el diccionario por completo
+
+def capitulo_34():
+    def cap_34suma(cap34_numero1, cap34_numero2): #Declaramos una funcion con parametros sin retorno
+        print('El resultado de la suma es: ',cap34_numero1 + cap34_numero2)#Hacemos una suma con los dos parametros recibidos y los imprimimos
+
+    print("Ejercicio 51:")
+    cap_34suma(10, 20)#llamamos a la funcion y mandamos dos numeros como parametros
+    cap_34suma(20, 30)#llamamos a la funcion y mandamos dos numeros como parametros
+    cap_34suma(50000, 7000)#llamamos a la funcion y mandamos dos numeros como parametros
     
 def main():
     print("Practica capitulo #2\n")
@@ -462,6 +471,9 @@ def main():
     pausa()
     print("Practica capitulo #33\n")
     capitulo_33()
+    pausa()
+    print("Practica capitulo #34\n")
+    capitulo_34()
     pausa()
 main()
 

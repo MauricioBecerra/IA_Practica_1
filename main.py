@@ -278,6 +278,8 @@ def capitulo_25():
                 print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
             if cap25_edad == 21: #Se crea un condicional
                 print('Ingresaste la edad equivalente a ' + str(cap25_edad) + ' años')
+            if cap25_edad > 17 and cap25_edad < 22:
+                print('La edad no esta registra en los condicionales.')
         else:
             print('Ingresa una edad valida.')
 
@@ -304,6 +306,18 @@ def capitulo_27():
         print('El valor es: ' + str(cap27_z)) #Imprime de valor de la variable
         cap27_z -= 1 #Resta 1 al valor anterior de la variable
     
+def capitulo_28():
+    print("Ejercicio 45:")
+    cap28_num1 = 0
+    while cap28_num1 <= 30:
+        cap28_num1 += 1#Incrementa 1 al valor anterior
+        if cap28_num1 == 4 or cap28_num1 == 6 or cap28_num1 == 10:#Condicional que se ejecuta cuando la variable toma el valor de 4 o 6 o 10, en cualquiera de esoos 3 casos
+            print('Se saltó el valor ' + str(cap28_num1) + ' de cap28_num1') #Imprime el mensaje se salto el valor e imprime el valor de la variable
+            continue#hace salto del ciclo
+        if cap28_num1 == 15:#ocndicional que comprueba ssi el valor es igual a 15
+            print('Se rompió la ejecución del bucle cuando cap28_num1 tomo el valor de: '+ str(cap28_num1))#Imprime el mensaje se rompio el bucle en el valor e imprime el valor de la variable
+            break#rompe el ciclo
+        print(cap28_num1)
 
 def main():
     print("Practica capitulo #2\n")
@@ -381,4 +395,9 @@ def main():
     print("Practica capitulo #27\n")
     capitulo_27()
     pausa()
+    print("Practica capitulo #28\n")
+    capitulo_28()
+    pausa()
 main()
+
+#print("Ejercicio 45:")

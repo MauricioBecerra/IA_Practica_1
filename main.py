@@ -341,6 +341,17 @@ def capitulo_31():
     print("Ejercicio 48:")
     print('El modelo ', cap31_teclado_2['Modelo'] + ' cuesta ' + ' $ ' +cap31_teclado_2['Precio'])#Imprime los valores del diccionario en el apartado correspondiente.
     
+def capitulo_32():
+    cap32_teclado_2 = {#Creamos un diccionario  con datos de categoria, modelo y precio, en este caso de un teclado
+        'Categoría': 'Teclados', #Parte del diccionario que contiene la categoria
+        'Modelo': 'HyperX Alloy FPS Pro', #Parte del diccionario que contiene el modelo
+        'Precio': '89,99'#Parte del diccionario que contiene el precio
+    }
+    print("Ejercicio 49:")
+    print('Consiste en imprimir los valores del diccionario con un ciclo for ')
+    for z in cap32_teclado_2: #Generamos un for que se repetira la longitud del diccionario
+        print(z + ' = ' + cap32_teclado_2[z]) #Imprime el valor de z que sera la key y luego cap32_teclado_2[z] sera el valor en esa key
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -428,6 +439,9 @@ def main():
     pausa()
     print("Practica capitulo #31\n")
     capitulo_31()
+    pausa()
+    print("Practica capitulo #32\n")
+    capitulo_32()
     pausa()
 main()
 

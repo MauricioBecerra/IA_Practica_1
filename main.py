@@ -576,6 +576,7 @@ def capitulo_46():
         'y': "Año corto: %y",
         'Y': "Año largo: %Y"
     }
+    print('Ejercicio del capitulo 46')
     cap46_fecha = datetime.datetime.now()#obtenemos la fecha actual
     for key, value in cap46_formatos.items():#realizamos un for de longitud del diccionario
         print(cap46_fecha.strftime(value))#impirmimos el valor indicado de cada key en el diccionario
@@ -585,6 +586,7 @@ def capitulo_47():
 
     cap47_texto = "Checo is a legend!!!"#cadena de texto
     cap47_busqueda = key.search("legend", cap47_texto)#realiza la busqueda y guarda en una variable
+    print('Ejercicio del capitulo 47')
     print(cap47_busqueda)#imprime el resultado
 
 def capitulo_48():
@@ -592,6 +594,7 @@ def capitulo_48():
 
     cap48_texto = "Checo is a legend!!!"#cadena de texto
     cap48_busqueda = key.findall("c", cap48_texto)#realiza la busqueda y guardando todos los resultados en una variable
+    print('Ejercicio del capitulo 48')
     print(cap48_busqueda)#imprime el resultado
  
 def capitulo_49():
@@ -599,10 +602,19 @@ def capitulo_49():
 
     cap49_texto = "Checo is a legend!!! Checo you are the world champion"#cadena de texto
     cap49_busqueda = key.split(" ", cap49_texto)#analiza la cadena y separa las palabras y une todos los resultados en una variable
+    print('Ejercicio del capitulo 49')
     print(cap49_busqueda)#imprime el resultado
     cap49_busqueda = key.split(" ", cap49_texto, 3)#analiza la cadena y separa las primeras 3 palabras y une todos lo demas en una variable
     print(cap49_busqueda)#imprime el resultado
     
+def capitulo_50():
+    import re as key #importamos la paqueteria y creamos un objeto
+
+    cap49_texto = "Checo is a legend!!! Checo you are the world champion"#cadena de texto
+    cap49_busqueda = key.findall("[c-e]", cap49_texto)#analiza la cadena y encuentra las coincidencias en las palabras y guarda los resultados en una variable
+    print('Ejercicio del capitulo 50')
+    print(cap49_busqueda)#imprime el resultado
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -744,6 +756,9 @@ def main():
     pausa()
     print("Practica capitulo #49\n")
     capitulo_49()
+    pausa()
+    print("Practica capitulo #50\n")
+    capitulo_50()
     pausa()
     
 main()

@@ -484,11 +484,34 @@ def capitulo_41():
     class Correo_Vip(Correo):
         pass
     
-    print("Ejercicio de capitulo #40\n")
+    print("Ejercicio de capitulo #41\n")
     key = Correo('Mauricio', '0123456789')#Se inicializan los valores para los atributos de ese objeto
     key.cap41_imprime()#imprime los datos
     key_2 = Correo_Vip('Ernesto', 'LKO78922')#usamos el metodo __init__ que tiene la clase por herencia para inicializar los atributos heredados
     key_2.cap41_imprime()#usamos el metodo hererado de la clase original
+
+def capitulo_42():
+    class Correo:#Se crea una clase
+        def __init__(self, name, Password) -> None:#la clase de inicializacion
+            self.name = name #Se crea un atributo
+            self.password = Password#Se crea un atributo
+
+        def cap42_imprime(self):#Se crea un metodo de la clase
+            print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
+    class Correo_Vip(Correo):
+        def __init__(self, name, Password, correo) -> None:#la clase de inicializacion
+            self.name = name #Se crea un atributo
+            self.password = Password#Se crea un atributo
+            self.correo = correo #se declara un atributo
+            
+    print("Ejercicio de capitulo #42\n")
+    key = Correo('Mauricio', '0123456789')#Se inicializan los valores para los atributos de ese objeto
+    key.cap42_imprime()#imprime los datos
+    key_2 = Correo_Vip('Checo Perez', 'Is_a_legend', 'Checo@gmail.com')#Se inicializan los valores para los atributos de ese objeto
+    key_2.cap42_imprime()#imprime los datos
+    print("correo: ",key_2.correo)
+
+
 
 def main():
     print("Practica capitulo #2\n")
@@ -607,6 +630,9 @@ def main():
     pausa()
     print("Practica capitulo #41\n")
     capitulo_41()
+    pausa()
+    print("Practica capitulo #42\n")
+    capitulo_42()
     pausa()
     
 main()

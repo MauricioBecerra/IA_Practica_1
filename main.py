@@ -472,7 +472,23 @@ def capitulo_40():
     del key.name #elimina el atributo name
     del key #Elimina el objeto
     
+def capitulo_41():
+    class Correo:#Se crea una clase
+        def __init__(self, name, Password) -> None:#la clase de inicializacion
+            self.name = name #Se crea un atributo
+            self.password = Password#Se crea un atributo
 
+        def cap41_imprime(self):#Se crea un metodo de la clase
+            print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
+            
+    class Correo_Vip(Correo):
+        pass
+    
+    print("Ejercicio de capitulo #40\n")
+    key = Correo('Mauricio', '0123456789')#Se inicializan los valores para los atributos de ese objeto
+    key.cap41_imprime()#imprime los datos
+    key_2 = Correo_Vip('Ernesto', 'LKO78922')#usamos el metodo __init__ que tiene la clase por herencia para inicializar los atributos heredados
+    key_2.cap41_imprime()#usamos el metodo hererado de la clase original
 
 def main():
     print("Practica capitulo #2\n")
@@ -588,6 +604,9 @@ def main():
     pausa()
     print("Practica capitulo #40\n")
     capitulo_40()
+    pausa()
+    print("Practica capitulo #41\n")
+    capitulo_41()
     pausa()
     
 main()

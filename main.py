@@ -521,10 +521,9 @@ def capitulo_43():
     print('Valor de la variable: ', cap43_num1)#imprimimos la variable global
 
     def cap43_funcion2():#inicamos funcion
-        pass#hacemos un pass
-
-    def cap43_funcion3():
-        print('String en esta función anidada.')
+        def cap43_funcion3():
+            print('String en esta función anidada.')
+        cap43_funcion3()
 
     cap43_funcion2()#llamamos a la funcion
 

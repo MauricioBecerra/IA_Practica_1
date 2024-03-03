@@ -436,11 +436,26 @@ def capitulo_38():
             print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
     
     print("Ejercicio de capitulo #38\n")
-    key = Correo('Mauricio', '0123456789')
-    key.cap38_imprime()
-    key_2 = Correo('Checo Perez', 'Is_a_legend')
-    key_2.cap38_imprime()
+    key = Correo('Mauricio', '0123456789')#Se inicializan los valores para los atributos de ese objeto
+    key.cap38_imprime()#imprime los datos
+    key_2 = Correo('Checo Perez', 'Is_a_legend')#Se inicializan los valores para los atributos de ese objeto
+    key_2.cap38_imprime()#imprime los daots
+
+def capitulo_39():
+    class Correo:#Se crea una clase
+        def __init__(self, name, Password) -> None:
+            self.name = name #Se crea un atributo
+            self.password = Password#Se crea un atributo
+
+        def cap39_imprime(self):#Se crea un metodo de la clase
+            print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
     
+    print("Ejercicio de capitulo #39\n")
+    key = Correo('Mauricio', '0123456789')#Se inicializan los valores para los atributos de ese objeto
+    key.cap39_imprime()#imprime los datos
+    key_2 = Correo('Checo Perez', 'Is_a_legend')#Se inicializan los valores para los atributos de ese objeto
+    key_2.name = 'Sergio Perez'#modifica el atributo
+    key_2.cap39_imprime()#imprime los datos
 
 def main():
     print("Practica capitulo #2\n")
@@ -550,6 +565,9 @@ def main():
     pausa()
     print("Practica capitulo #38\n")
     capitulo_38()
+    pausa()
+    print("Practica capitulo #39\n")
+    capitulo_39()
     pausa()
     
 main()

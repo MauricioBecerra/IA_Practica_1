@@ -587,6 +587,13 @@ def capitulo_47():
     cap47_busqueda = key.search("legend", cap47_texto)#realiza la busqueda y guarda en una variable
     print(cap47_busqueda)#imprime el resultado
 
+def capitulo_48():
+    import re as key #importamos la paqueteria y creamos un objeto
+
+    cap48_texto = "Checo is a legend!!!"#cadena de texto
+    cap48_busqueda = key.findall("c", cap48_texto)#realiza la busqueda y guardando todos los resultados en una variable
+    print(cap48_busqueda)#imprime el resultado
+    
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -722,6 +729,9 @@ def main():
     pausa()
     print("Practica capitulo #47\n")
     capitulo_47()
+    pausa()
+    print("Practica capitulo #48\n")
+    capitulo_48()
     pausa()
     
 main()

@@ -41,5 +41,5 @@ git clone https://github.com/MauricioBecerra/IA_Practica_1.git
 _Para ejecutar el script, realizaremos la siguiente accion_
 
 ```
-py main.py
+py _00_main.py
 ```

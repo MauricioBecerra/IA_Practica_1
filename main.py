@@ -404,7 +404,16 @@ def capitulo_35():
         print('El resultado de la suma de los argumentos es:', cap35_result)#imprimimos la suma
 
     cap35_suma(14,15,30,85,94)#Llamamos a nuestra funcion
+
+def capitulo_36():
+    def cap36_colores (**kwargs):
+        print("Este es el color 1 " + kwargs['color_1'] + ' Este es el color 2 ' + kwargs['color_2'])
+
+    print("Ejercicio capitulo 36:")
+    cap36_colores(color_1='Negro', color_2='Verde')
     
+
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -505,7 +514,9 @@ def main():
     print("Practica capitulo #35\n")
     capitulo_35()
     pausa()
-
+    print("Practica capitulo #36\n")
+    capitulo_36()
+    pausa()
     
 main()
 

@@ -426,6 +426,22 @@ def capitulo_37():
     key.password = '123456789M'#Usamos el objeto para llenar los atributos
     key.cap37_imprime()#Llama el metodo de la clase
 
+def capitulo_38():
+    class Correo:#Se crea una clase
+        def __init__(self, name, Password) -> None:
+            self.name = name #Se crea un atributo
+            self.password = Password#Se crea un atributo
+
+        def cap38_imprime(self):#Se crea un metodo de la clase
+            print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
+    
+    print("Ejercicio de capitulo #38\n")
+    key = Correo('Mauricio', '0123456789')
+    key.cap38_imprime()
+    key_2 = Correo('Checo Perez', 'Is_a_legend')
+    key_2.cap38_imprime()
+    
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -531,6 +547,9 @@ def main():
     pausa()
     print("Practica capitulo #37\n")
     capitulo_37()
+    pausa()
+    print("Practica capitulo #38\n")
+    capitulo_38()
     pausa()
     
 main()

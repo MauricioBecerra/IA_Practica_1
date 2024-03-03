@@ -412,7 +412,19 @@ def capitulo_36():
     print("Ejercicio capitulo 36:")
     cap36_colores(color_1='Negro', color_2='Verde')
     
+def capitulo_37():
+    class Correo:#Se crea una clase
+        name = ''#Se crea un atributo
+        password = ''#Se crea un atributo
 
+        def cap37_imprime(self):#Se crea un metodo de la clase
+            print('Name: ', self.name, '\nPassword: ', self.password)#Imprime los atributos
+
+    key = Correo()#Creamos un objeto
+    print('Ejercicio capitulo 37')
+    key.name = 'Mauricio'#Usamos el objeto para llenar los atributos
+    key.password = '123456789M'#Usamos el objeto para llenar los atributos
+    key.cap37_imprime()#Llama el metodo de la clase
 
 def main():
     print("Practica capitulo #2\n")
@@ -516,6 +528,9 @@ def main():
     pausa()
     print("Practica capitulo #36\n")
     capitulo_36()
+    pausa()
+    print("Practica capitulo #37\n")
+    capitulo_37()
     pausa()
     
 main()

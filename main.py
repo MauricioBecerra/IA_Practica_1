@@ -542,7 +542,44 @@ def capitulo_45():
     print('la fecha actual es: ', cap45_fecha)#imprimir la fecha
     
 def capitulo_46():
-    
+    import datetime#importamos la paqueteria datetime
+    cap46_formatos = { #creamos un diccionario
+        'a': "Día de la semana abreviado: %a",
+        'A': "Día de la semana completo: %A",
+        'b': "Mes abreviado: %b",
+        'B': "Mes completo: %B",
+        'c': "Fecha completa: %c",
+        'C': "Siglo (empieza a contar desde cero): %C",
+        'd': "Día del mes (01 - 31): %d",
+        'D': "Día/hora/año: %D",
+        'e': "Día del mes (1 - 31): %e",
+        'g': "Año en dos dígitos: %g",
+        'G': "Año en cuatro dígitos: %G",
+        'h': "Mes abreviado: %h",
+        'H': "Hora (00 - 23): %H",
+        'I': "Hora (01 - 12): %I",
+        'j': "Día del año: %j",
+        'm': "Mes del 01 al 12: %m",
+        'M': "Minuto: %M",
+        'p': "AM o PM: %p",
+        'r': "Hora + AM o PM: %r",
+        'R': "Hora y minutos: %R",
+        'S': "Segundos: %S",
+        'T': "Hora, minutos y segundos: %T",
+        'u': "Día de la semana (número): %u",
+        'U': "Semana del año (empieza en domingo): %U",
+        'V': "Semana del año(Condiciones especiales): %V",
+        'W': "Semana del año (empieza en lunes): %W",
+        'w': "Día de la semana (empieza en domingo): %w",
+        'x': "Día/mes/año de dos dígitos: %x",
+        'X': "Hora/minutos/segundos: %X",
+        'y': "Año corto: %y",
+        'Y': "Año largo: %Y"
+    }
+    cap46_fecha = datetime.datetime.now()#obtenemos la fecha actual
+    for key, value in cap46_formatos.items():#realizamos un for de longitud del diccionario
+        print(cap46_fecha.strftime(value))#impirmimos el valor indicado de cada key en el diccionario
+
 
 def main():
     print("Practica capitulo #2\n")
@@ -673,6 +710,9 @@ def main():
     pausa()
     print("Practica capitulo #45\n")
     capitulo_45()
+    pausa()
+    print("Practica capitulo #46\n")
+    capitulo_46()
     pausa()
     
 main()

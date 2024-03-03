@@ -615,6 +615,17 @@ def capitulo_50():
     print('Ejercicio del capitulo 50')
     print(cap49_busqueda)#imprime el resultado
 
+def capitulo_51():
+    band=False
+    while band!=True:
+        try:#iniciamos un try que en el momento de que el codigo genere una excepcion en lugar 
+            #de romper el codigo realiza una excepcion con el codigo y no lo rompera, mostrara un mensaje
+            cap50_num = int(input('Ingrese un numero, si ingresa una letra vera que no se rompe el programa: '))#soliciata un dato al usuario
+            if cap50_num != '':#condicional para terminar el ciclo
+                band=True#bandera en verdadero para terminar el ciclo
+        except:#muestra los mensajes de excepcion se pueden hacer mas especificos usando un trown para las excepciones
+            print('Vio? que no se rompio el codigo. Vuelva intentarlo')#imprime un mesaje
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -760,7 +771,8 @@ def main():
     print("Practica capitulo #50\n")
     capitulo_50()
     pausa()
+    print("Practica capitulo #51\n")
+    capitulo_51()
+    pausa()
     
 main()
-
-#print("Ejercicio 45:")

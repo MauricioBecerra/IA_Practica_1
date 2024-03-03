@@ -533,6 +533,17 @@ def capitulo_44():
     raiz_cuadrada = math.sqrt(81) #sacamos la raiz cuadrada de un valor usando la paqueteria math
     print('La raiz cuadrada de 81 es: ', raiz_cuadrada)#imprimimos la raiz cuadrada
 
+def capitulo_45():
+    import datetime#importamos la paqueteria datetime
+    cap45_fecha = datetime.datetime.now()#obtenemos la fecha actual
+    print('Ejercicio del capitulo 45')
+    print('la fecha actual es: ', cap45_fecha)#imprimir la fecha
+    cap45_fecha = datetime.datetime(2024,3,3,12,45,12)#Ingresamos una fecha personalizada
+    print('la fecha actual es: ', cap45_fecha)#imprimir la fecha
+    
+def capitulo_46():
+    
+
 def main():
     print("Practica capitulo #2\n")
     capitulo_2()
@@ -659,6 +670,9 @@ def main():
     pausa()
     print("Practica capitulo #44\n")
     capitulo_44()
+    pausa()
+    print("Practica capitulo #45\n")
+    capitulo_45()
     pausa()
     
 main()

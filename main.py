@@ -1,4 +1,5 @@
-import os
+import os #importamos una paqueteria
+import math #importamos una paqueteria
 
 #Funcion para borrar la pantalla detectando primero el SO donde se ejecuto el script
 def borrarPantalla(): 
@@ -527,6 +528,10 @@ def capitulo_43():
 
     cap43_funcion2()#llamamos a la funcion
 
+def capitulo_44():
+    print("Ejercicio capitulo 44:")
+    raiz_cuadrada = math.sqrt(81) #sacamos la raiz cuadrada de un valor usando la paqueteria math
+    print('La raiz cuadrada de 81 es: ', raiz_cuadrada)#imprimimos la raiz cuadrada
 
 def main():
     print("Practica capitulo #2\n")
@@ -651,6 +656,9 @@ def main():
     pausa()
     print("Practica capitulo #43\n")
     capitulo_43()
+    pausa()
+    print("Practica capitulo #44\n")
+    capitulo_44()
     pausa()
     
 main()

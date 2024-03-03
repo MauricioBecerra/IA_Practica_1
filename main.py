@@ -511,6 +511,22 @@ def capitulo_42():
     key_2.cap42_imprime()#imprime los datos
     print("correo: ",key_2.correo)
 
+def capitulo_43():
+    def cap43_funcion1():
+        global cap43_num1#generamos una variable global
+        cap43_num1 = 85 #agregamos valor
+
+    print("Ejercicio de capitulo #43\n")
+    cap43_funcion1()#llamamos a la funcion
+    print('Valor de la variable: ', cap43_num1)#imprimimos la variable global
+
+    def cap43_funcion2():#inicamos funcion
+        pass#hacemos un pass
+
+    def cap43_funcion3():
+        print('String en esta función anidada.')
+
+    cap43_funcion2()#llamamos a la funcion
 
 
 def main():
@@ -633,6 +649,9 @@ def main():
     pausa()
     print("Practica capitulo #42\n")
     capitulo_42()
+    pausa()
+    print("Practica capitulo #43\n")
+    capitulo_43()
     pausa()
     
 main()

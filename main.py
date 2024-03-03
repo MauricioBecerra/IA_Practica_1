@@ -593,6 +593,15 @@ def capitulo_48():
     cap48_texto = "Checo is a legend!!!"#cadena de texto
     cap48_busqueda = key.findall("c", cap48_texto)#realiza la busqueda y guardando todos los resultados en una variable
     print(cap48_busqueda)#imprime el resultado
+ 
+def capitulo_49():
+    import re as key #importamos la paqueteria y creamos un objeto
+
+    cap49_texto = "Checo is a legend!!! Checo you are the world champion"#cadena de texto
+    cap49_busqueda = key.split(" ", cap49_texto)#analiza la cadena y separa las palabras y une todos los resultados en una variable
+    print(cap49_busqueda)#imprime el resultado
+    cap49_busqueda = key.split(" ", cap49_texto, 3)#analiza la cadena y separa las primeras 3 palabras y une todos lo demas en una variable
+    print(cap49_busqueda)#imprime el resultado
     
 def main():
     print("Practica capitulo #2\n")
@@ -732,6 +741,9 @@ def main():
     pausa()
     print("Practica capitulo #48\n")
     capitulo_48()
+    pausa()
+    print("Practica capitulo #49\n")
+    capitulo_49()
     pausa()
     
 main()

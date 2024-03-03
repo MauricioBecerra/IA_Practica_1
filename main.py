@@ -580,6 +580,12 @@ def capitulo_46():
     for key, value in cap46_formatos.items():#realizamos un for de longitud del diccionario
         print(cap46_fecha.strftime(value))#impirmimos el valor indicado de cada key en el diccionario
 
+def capitulo_47():
+    import re as key #importamos la paqueteria y creamos un objeto
+
+    cap47_texto = "Checo is a legend!!!"#cadena de texto
+    cap47_busqueda = key.search("legend", cap47_texto)#realiza la busqueda y guarda en una variable
+    print(cap47_busqueda)#imprime el resultado
 
 def main():
     print("Practica capitulo #2\n")
@@ -713,6 +719,9 @@ def main():
     pausa()
     print("Practica capitulo #46\n")
     capitulo_46()
+    pausa()
+    print("Practica capitulo #47\n")
+    capitulo_47()
     pausa()
     
 main()

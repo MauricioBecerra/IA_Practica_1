@@ -40,7 +40,6 @@ def capitulo_3():
     capitulo3_3 = '"print()" se utiliza para imprimir valores en la consola.'
     print("Ejercicio 6: "+capitulo3_3)
 
-
 #Practica del capitulo 4
 #Ejercicio 7 consta en generar una variable y concatenar 2 strings
 #Ejercicio 8 consta en generar dos variables, sumarlas e imprimirlas
